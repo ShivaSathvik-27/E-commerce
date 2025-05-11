@@ -22,6 +22,7 @@ app.config['MAIL_USERNAME'] = 'hemanthd2429@gmail.com'
 app.config['MAIL_PASSWORD'] = 'zmoalxdykkkxzwas'  
 app.config['MAIL_DEFAULT_SENDER'] = 'noreply@example.com'
 
+#check git push
 
 mail = Mail(app)
 

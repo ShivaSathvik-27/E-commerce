@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>An Intelligent Data-Driven Model to Secure Intra Vehicle </h1>
+        <h1>Communications Based on ML</h1>
+        <div class="logout-container">
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+    </header>
+	<main>
+    <div class="container">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+	</main>
+    <footer>
+        <p>© 2024 Anomaly Detection </p>
+    </footer>
+</body>
+</html>

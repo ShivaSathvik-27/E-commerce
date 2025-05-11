@@ -1,0 +1,41 @@
+/* reset_success.css */
+
+/* Container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Success Message */
+p {
+    color: #008000;
+    font-size: 18px;
+}
+
+/* Button */
+.button {
+    background-color: #5fbae9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3d8bba;
+}

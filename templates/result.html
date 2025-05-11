@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Anomaly Detection Results</h1>
+        <div class="logout-container">
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+    </header>
+	<main>
+    <div class="container">
+        {% for prediction in predictions %}
+            <div class="prediction">
+                <p>Input: {{ prediction.input }}</p>
+                <p>Prediction: {{ prediction.prediction }}</p>
+            </div>
+        {% endfor %}
+    </div>
+	</main>
+	<br><br>
+    <footer>
+        <p>© 2024 Anomaly Detection App</p>
+    </footer>
+</body>
+</html>

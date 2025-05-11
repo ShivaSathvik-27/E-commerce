@@ -1,0 +1,120 @@
+/* Add styles for the table container */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+    margin-bottom: 20px; /* Add some spacing between the table and other elements */
+}
+
+/* Add styles for the table */
+table {
+    width: 100%; /* Ensure the table fills the container */
+    border-collapse: collapse; /* Merge table borders */
+}
+
+table th, table td {
+    padding: 8px; /* Add padding to table cells */
+    border: 1px solid #ddd; /* Add borders to table cells */
+}
+
+/* Add any other table styles as needed */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333; /* Backend color for header */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: #ddd; /* Backend color for navigation */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Backend color for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Add styles for the prediction messages */
+.prediction {
+    background-color: #f0f0f0; /* Background color for prediction messages */
+    border: 1px solid #ccc; /* Border for prediction messages */
+    margin-bottom: 10px; /* Add some spacing between prediction messages */
+    padding: 10px; /* Add padding to prediction messages */
+    border-radius: 5px; /* Add border radius to prediction messages */
+}
+
+/* Add styles for the input data */
+.prediction p {
+    margin: 5px 0; /* Add some margin to each paragraph within prediction messages */
+    font-size: 16px; /* Set font size for prediction messages */
+    color: #333; /* Text color for prediction messages */
+}
+
+/* Add styles for prediction labels */
+.prediction .input-label {
+    font-weight: bold; /* Make prediction labels bold */
+    color: #555; /* Text color for prediction labels */
+}
+
+/* Add styles for prediction results */
+.prediction .prediction-result {
+    font-style: italic; /* Make prediction results italic */
+    color: #007bff; /* Text color for prediction results */
+}
+/* Add styles for the logout button */
+.logout-btn {
+    background-color: white; /* White background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position the button */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Add hover effect */
+.logout-btn:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
